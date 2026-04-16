@@ -1,9 +1,39 @@
 app_name = "bank_clearance_custom"
 app_title = "Bank Clearance Custom"
-app_publisher = "subin"
+app_publisher = "Addons"
 app_description = "Bank Clearance Custom"
-app_email = "subin@gmail.com"
+app_email = "you@example.com"
 app_license = "mit"
+
+doctype_js = {
+    "Bank Clearance": "public/js/bank_clearance.js"
+}
+
+override_doctype_class = {
+    "Bank Clearance": "bank_clearance_custom.overrides.bank_clearance.BankClearance"
+}
+
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "Bank Clearance-custom_account_to",
+                    "Bank Clearance-custom_tax_and_charges_section",
+                    "Bank Clearance-custom_sales_taxes_and_charges_template",
+                    "Bank Clearance-custom_taxes",
+                    "Bank Clearance-custom_total_taxes_and_charges",
+                    "Bank Clearance-custom_totals_section",
+                    "Bank Clearance-custom_cleared_amount_after_tax",
+                    "Bank Clearance-custom_journal_entry_for_tax",
+                ],
+            ]
+        ],
+    }
+]
 
 # Apps
 # ------------------

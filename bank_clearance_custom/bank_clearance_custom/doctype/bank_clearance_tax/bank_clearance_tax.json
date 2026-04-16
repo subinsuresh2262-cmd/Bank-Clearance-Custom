@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-11 00:00:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "charge_type",
+  "account_head",
+  "description",
+  "tax_amount",
+  "tax_rate",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "charge_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Actual\nOn Net Total\nOn Previous Row Amount\nOn Previous Row Total\nOn Item Quantity"
+  },
+  {
+   "fieldname": "account_head",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Account Head",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "tax_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tax_rate",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Tax Rate"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-11 18:03:18.606676",
+ "modified_by": "Administrator",
+ "module": "Bank Clearance Custom",
+ "name": "Bank Clearance Tax",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
